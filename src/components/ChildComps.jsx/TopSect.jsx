@@ -65,11 +65,11 @@ function TopSect() {
       </section>
 
       {/* RIGHT SIDE */}
-      <section className="bg-[#4ac2f0] min-h-[300px] flex items-center justify-center px-20 lg:min-h-full">
+      <section className="bg-[#4ac2f0] min-h-[300px] w-full lg:min-h-full">
          <img
-          src="/bgimg4.png"
+          src="/hero.webp"
           alt="Logo"
-          className="w-100"
+          className="w-full h-full object-cover"
         />
       
       </section>
