@@ -1,18 +1,13 @@
-
-
-
-
 import React from 'react'
-import { motion } from 'framer-motion'
 
 function TopSect() {
   return (
     <main 
-     className="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
+     className="grid grid-cols-1 lg:grid-cols-2 min-h-[80vh]">
       
       {/* LEFT SIDE */}
       <section className="bg-[#1a193a] py-10 lg:py-14">
-        <div className="relative z-10 max-w-6xl mx-auto m text-white px-6 sm:px-10 lg:px-16 flex flex-col justify-center gap-6 sm:gap-8">
+        <div className="relative z-10 max-w-6xl mx-auto m text-white px-6 sm:px-10 lg:px-16 pt-10 md:pt-12 xl:pt-20 flex flex-col justify-center gap-6 sm:gap-8">
           {/* Heading */}
           <motion.h1 
             initial={{ opacity: 0, y: 50 }}
