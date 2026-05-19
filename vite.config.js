@@ -5,4 +5,9 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  appType: 'spa',
+  preview: {
+    // Ensure `npm run preview` serves index.html for direct /nominate URLs
+    historyApiFallback: true,
+  },
 })
