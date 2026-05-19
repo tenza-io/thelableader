@@ -1,5 +1,7 @@
+// eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function TopSect() {
   return (
@@ -42,13 +44,15 @@ function TopSect() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-[#49c1ef] w-full sm:w-auto px-6 py-3  text-base sm:text-lg font-bold text-[#1a193a] shadow-md hover:shadow-xl transition"
-            >
-              Nominate
-            </motion.button>
+            <Link to="/nominate" className="w-full sm:w-auto">
+              <motion.span
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="inline-block bg-[#49c1ef] w-full sm:w-auto px-6 py-3 text-base sm:text-lg font-bold text-[#1a193a] shadow-md hover:shadow-xl transition text-center"
+              >
+                Nominate
+              </motion.span>
+            </Link>
 
             <a href="/#evaluation" className="w-full sm:w-auto">
               <motion.button

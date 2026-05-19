@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { FaLinkedinIn, FaFacebookF, FaInstagram } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
 
@@ -22,7 +23,7 @@ function Footer() {
             <li><a href="/#about" className="hover:text-[#4ac2f0] transition">About us</a></li>
             <li><a href="/#categories" className="hover:text-[#4ac2f0] transition">Categories</a></li>
             <li><a href="/#mission" className="hover:text-[#4ac2f0] transition">Mission & Vision</a></li>
-            <li><a href="/nominate" className="hover:text-[#4ac2f0] transition">Nominate</a></li>
+            <li><Link to="/nominate" className="hover:text-[#4ac2f0] transition">Nominate</Link></li>
           </ul>
         </div>
 

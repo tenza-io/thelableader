@@ -1,7 +1,6 @@
 
-
-
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 const links = [
   { text: "Home", link: "/#" },
@@ -44,9 +43,12 @@ function Navbar() {
 
           {/* Button */}
           <li>
-            <button className="bg-[#49c1ef] px-5 py-2 lg:px-6 lg:py-3 text-sm lg:text-base font-bold text-[#1a193a]  transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95">
+            <Link
+              to="/nominate"
+              className="inline-block bg-[#49c1ef] px-5 py-2 lg:px-6 lg:py-3 text-sm lg:text-base font-bold text-[#1a193a] transition-all duration-300 hover:scale-105 hover:shadow-lg active:scale-95"
+            >
               Nominate
-            </button>
+            </Link>
           </li>
         </ul>
 
@@ -77,9 +79,13 @@ function Navbar() {
             ))}
 
             <li>
-              <button className="w-full bg-[#49c1ef] text-[#1a193a] py-3 font-semibold transition-all duration-300 hover:shadow-lg">
+              <Link
+                to="/nominate"
+                className="block w-full bg-[#49c1ef] text-[#1a193a] py-3 text-center font-semibold transition-all duration-300 hover:shadow-lg"
+                onClick={() => setOpen(false)}
+              >
                 Nominate
-              </button>
+              </Link>
             </li>
 
           </ul>
